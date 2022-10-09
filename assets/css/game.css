@@ -60,3 +60,76 @@ header {
     position: fixed;
     margin-top: -45%;
 }
+
+@media screen and (max-width: 1600px) {
+    header {
+        font-size: large;
+        position: fixed;
+        margin-top: -50%;
+    }
+
+    * {
+        font-size: 59.5%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    header {
+        margin-top: -60%;
+    }
+    
+    * {
+        font-size: 57.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: large;
+        position: fixed;
+        margin-top: -45%;
+    }
+
+    * {
+        font-size: 50.5%;
+    }
+    
+    h1 {
+        font-size: 3.4rem;
+    }
+    
+    .hud-item-1 {
+        margin-right: -30%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    * {
+        font-size: 21.5%;
+    }
+    
+    header {
+        margin-top: -55%;
+    }
+    
+    h1 {
+        font-size: 4.4rem;
+        margin-bottom: 8rem;
+    }
+    
+    .choice-container {
+        font-size: 12rem;
+    }
+    
+    .hud-prefix {
+        font-size: 3rem;
+    }
+}
