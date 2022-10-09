@@ -58,7 +58,7 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
 
 ## Issues and Bugs
 
-- 
+- Correction made to game.html and style.css.
 
 ## Validator Testing 
 
