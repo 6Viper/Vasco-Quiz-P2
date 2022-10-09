@@ -17,13 +17,15 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
   - Featured on all pages, the header will display our game name "Vasco Da Gama Fan QUIZ!".
   - Header will provide clear understanding of what game are they playing.
 
-![Vasco Da Gama Fan Quiz Mockup](assets/images/mockupframe.png)
+![Header](assets/images/mockupframe.png)
 
 - __The Game Intro__
 
   - Question made to player if ready to start the game leading to options bellow.
   - Feature to include your name before start of the game. 
   - Start button that will direct player to game page.
+
+![The Game](assets/images/)
 
 - __The Game__
 
@@ -63,14 +65,15 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
 ## Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](link)
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](link)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 - Accessibility
   - Accessibility confirmed by running it through lighthouse in devtools
-  ![Accessibility](assets/images/lighthouse.png)
 - JSHint
-  - Test made with Js presented no issues  [(Jigsaw) validator](link)
+  - Test made with Js presented no issues  [(Jigsaw) validator](https://jshint.com/)
+
+    ![Accessibility](assets/images/lighthouse.png)
 
 ## Unfixed Bugs
 
