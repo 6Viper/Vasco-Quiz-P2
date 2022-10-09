@@ -1,108 +1,128 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Vasco Da Gama Fan QUIZ!
 
-Welcome 6Viper,
+Vasco Da Gama Fan Quiz was made for the Second Project required to complete the Diploma in Full Stack Software Development program at The Code Institute and shoes to accomplish with success all requirements as well to provide the developer a great learning experience through out the process. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This Quiz intends to target Vasco da Gama fans from all around the world where fans are able to get their knowlodge and curiosities about the team checked trough a series of Questions. Each correct  answer will count a score point for you, and for each incorrect answer a point goes to the Outside Team.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+![Vasco Da Gama Fan Quiz Mockup](assets/images/mockupframe.png)
 
-## Gitpod Reminders
+![](assets/images/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Features 
 
-`python3 -m http.server`
+### Existing Features
 
-A blue button should appear to click: _Make Public_,
+- __Header__
 
-Another blue button should appear to click: _Open Browser_.
+  - Featured on all pages, the header will display our game name "Vasco Da Gama Fan QUIZ!".
+  - Header will provide clear understanding of what game are they playing.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+![Vasco Da Gama Fan Quiz Mockup](assets/images/mockupframe.png)
 
-A blue button should appear to click: _Make Public_,
+- __The Game Intro__
 
-Another blue button should appear to click: _Open Browser_.
+  - Question made to player if ready to start the game leading to options bellow.
+  - Feature to include your name before start of the game. 
+  - Start button that will direct player to game page.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __The Game__
 
-To log into the Heroku toolbelt CLI:
+  - Game is featured with progress of questions, so player can recognize current question and how many in total.
+  - A score board simple and friendly displaying player score and in the event get a question wrong a point is given to the other team. 
+  - Random question large and visible above choices available.
+  - Choices from A to D and upon selection background color will change to green if correct option selected or red if incorrect.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![The Game](assets/images/)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __The Game Ends__
 
-------
+  - The game ends and Player have the options to go back to main page and enter a new name as well to play again, or to go straight into another game. We also thank player for playing this special game.  
 
-## Release History
+![Last Page](assets/images/)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __Features Left to Implement__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  - I would like to add a ranking feature based on names, so can players get a bit competitive and show more insteresting on team knowledge.
+  - I would like to add sound to correct questions as similar to scoring a goal.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Testing 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Different browsers(Chrome, Safari and Firefox) been tested to verify that page would work with no issue as well as mobile and table devices are responsive to Media querie styles implemented.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- The project is responsive, have a good, simple and clean visual effect and is fully functional with correct results.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- All features within main body have been tested to confirm working properly and texts are clear and readable as well easy to understand.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Correct or incorrect answers will be displayed as well tracking question or score functions.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Issues and Bugs
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Validator Testing 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- HTML
+  - No errors were returned when passing through the official [W3C validator](link)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](link)
+- Accessibility
+  - Accessibility confirmed by running it through lighthouse in devtools
+  ![Accessibility](assets/images/lighthouse.png)
+- JSHint
+  - Test made with Js presented no issues  [(Jigsaw) validator](link)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Unfixed Bugs
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+No unfixed bugs
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Technologies Used
+### Main language used
 
-------
+- [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
+- [JS](https://en.wikipedia.org/wiki/JavaScript "Link to JS Wiki")
 
-## FAQ about the uptime script
+### Frameworks, Libraries & Programs Used
 
-**Why have you added this script?**
+- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
+    - Google fonts was used to import the fonts "Open Sans" and "Playfair" into the style.css file. These fonts were used throughout the project.
+- [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
+     - Font Awesome was used on all pages of this website to import icons to the footer (social media icons) for UX purposes.
+- [GitPod](https://gitpod.io/ "Link to GitPod homepage")
+     - GitPod was used for writing code, commiting, and then pushing to GitHub.
+- [GitHub](https://github.com/ "Link to GitHub")
+     - GitHub was used to store the project after pushing.
+- [Figma](https://www.figma.com/ "Link to Figma homepage")
+     - Figma was used to create the concept art during the design phase of the project.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Deployment
 
-**How will this affect me?**
+- This project was developed using [GitPod](https://www.gitpod.io/ "Link to GitPod site"). 
+- Through Gitpod terminal I have executed commitments and pushed changes to [GitHub](https://github.com/ "Link to GitHub").
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section General, select the option "Pages".
+  - Under GitHub Pages, select Branch from "None" to "main".
+  - Once selected "main" push the save option, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The live link can be found here - https://6viper.github.io/
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Credits 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Content 
 
-**So….?**
+- The text for the Home page was provided by myself and Vasco da Gama facts checked from general websites.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Media
 
-**Can I opt out?**
+- 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Code 
+This has been the most challeging so far, where the developer have used several sites and channels to better understand codes been used and how it properly works. Several learning projects reviewed such as Love-maths, Running project, Readme file ideas from Running project and Vasco Dublin, samples from Coding Club and Survival Guild. Links bellow:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- [Code Institue videos](https://learn.codeinstitute.net/dashboard "Link to Code institute dashboard")
+- [Love Maths](https://github.com/6Viper/love-maths "Link to Love Maths")
+- [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
+- [Bro Code](https://www.youtube.com/c/BroCodez "Link to Bro Code Youtube Channel")
+- [Six Minutes. Smarter.](https://www.youtube.com/c/RalphPhillips73 "Link to Six Minutes. Smarter. Youtube Channel")  
