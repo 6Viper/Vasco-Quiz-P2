@@ -31,10 +31,10 @@ let questions = [
     },
     {
         question: "When did Vasco made his debut in Football against Paladino F.C..?",
-        choice1: "1 de maio de 1917",
-        choice2: "3 de maio de 1916",
-        choice3: "3 de maio de 1917",
-        choice4: "1 de maio de 1916",
+        choice1: "May 1st, 1917",
+        choice2: "May 3rd, 1916",
+        choice3: "May 3rd, 1917",
+        choice4: "May 1st, 1916",
         answer: 2,
     },
     {
