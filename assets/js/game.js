@@ -29,6 +29,7 @@ let questions = [
         choice4: "Corinthias",
         answer: 3,
     },
+    ///Language to en///
     {
         question: "When did Vasco made his debut in Football against Paladino F.C..?",
         choice1: "May 1st, 1917",
@@ -57,7 +58,7 @@ let questions = [
 
 const SCORE_POINTS = 1
 const MAX_QUESTIONS = 5
-
+/// function correction ///
 function startGame() {
     questionCounter = 0
     score = 0
@@ -65,10 +66,11 @@ function startGame() {
     availableQuestions = [...questions]
     getNewQuestion()
 }
-
+/// function correction ///
 function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
+        /// Score for opponent ///
         localStorage.setItem('mostRecentScore2', reducescore)
 
         return window.location.assign('end.html')
@@ -80,7 +82,7 @@ function getNewQuestion() {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
-
+/// function correction ///
     choices.forEach(function (choice) {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
@@ -90,7 +92,7 @@ function getNewQuestion() {
 
     acceptingAnswers = true
 }
-
+/// function correction ///
 choices.forEach(function (choice) {
     choice.addEventListener('click', function (e) {
         if(!acceptingAnswers) return
@@ -116,12 +118,12 @@ choices.forEach(function (choice) {
         }, 1000)
     })
 })
-
+/// function correction ///
 function incrementScore(num) {
     score +=num
     scoreText.innerText = score
 } 
-
+/// function correction ///
 function reduceScore(num) {
     reducescore +=num
     incorrectText.innerText = reducescore

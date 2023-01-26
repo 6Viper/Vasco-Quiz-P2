@@ -1,3 +1,4 @@
+/// Code for Final Scoreboard end page ///
 const finalScore = document.querySelector('#finalScore');
 const finalScore2 = document.querySelector('#finalScore2');
 
