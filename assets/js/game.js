@@ -29,7 +29,7 @@ let questions = [
         choice4: "Corinthias",
         answer: 3,
     },
-    ///Language to en///
+    ///Language to en ///
     {
         question: "When did Vasco made his debut in Football against Paladino F.C..?",
         choice1: "May 1st, 1917",
@@ -66,15 +66,15 @@ function startGame() {
     availableQuestions = [...questions]
     getNewQuestion()
 }
+
 /// function correction ///
 function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-        /// Score for opponent ///
         localStorage.setItem('mostRecentScore2', reducescore)
 
         return window.location.assign('end.html')
-    }
+    } 
 
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
@@ -122,7 +122,7 @@ choices.forEach(function (choice) {
 function incrementScore(num) {
     score +=num
     scoreText.innerText = score
-} 
+}
 /// function correction ///
 function reduceScore(num) {
     reducescore +=num
