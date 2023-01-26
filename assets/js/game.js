@@ -5,12 +5,12 @@ const scoreText = document.querySelector('#score');
 const incorrectText = document.querySelector('#score2');
 
 
-let currentQuestion = {}
-let acceptingAnswers = true
-let score = 0
-let reducescore = 0
-let questionCounter = 0
-let availableQuestions = []
+let currentQuestion = {};
+let acceptingAnswers = true;
+let score = 0;
+let reducescore = 0;
+let questionCounter = 0;
+let availableQuestions = [];
 
 let questions = [
     {
@@ -54,79 +54,79 @@ let questions = [
         choice4: "1933",
         answer: 2,
     }
-]
+];
 
-const SCORE_POINTS = 1
-const MAX_QUESTIONS = 5
+const SCORE_POINTS = 1;
+const MAX_QUESTIONS = 5;
 /// function correction ///
 function startGame() {
-    questionCounter = 0
-    score = 0
-    reducescore = 0
-    availableQuestions = [...questions]
-    getNewQuestion()
+    questionCounter = 0;
+    score = 0;
+    reducescore = 0;
+    availableQuestions = [...questions];
+    getNewQuestion();
 }
 
 /// function correction ///
 function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
-        localStorage.setItem('mostRecentScore2', reducescore)
+        localStorage.setItem('mostRecentScore', score);
+        localStorage.setItem('mostRecentScore2', reducescore);
 
-        return window.location.assign('end.html')
+        return window.location.assign('end.html');
     } 
 
-    questionCounter++
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    questionCounter++;
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionsIndex]
-    question.innerText = currentQuestion.question
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionsIndex];
+    question.innerText = currentQuestion.question;
 /// function correction ///
     choices.forEach(function (choice) {
-        const number = choice.dataset['number']
-        choice.innerText = currentQuestion['choice' + number]
-    })
+        const number = choice.dataset['number'];
+        choice.innerText = currentQuestion['choice' + number];
+    });
 
-    availableQuestions.splice(questionsIndex, 1)
+    availableQuestions.splice(questionsIndex, 1);
 
-    acceptingAnswers = true
+    acceptingAnswers = true;
 }
 /// function correction ///
 choices.forEach(function (choice) {
     choice.addEventListener('click', function (e) {
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) return;
 
-        acceptingAnswers = false
-        const selectedChoice = e.target
-        const selectedAnswer = selectedChoice.dataset['number']
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
   
         if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
+            incrementScore(SCORE_POINTS);
         } else if(classToApply === 'incorrect') {
-            reduceScore(SCORE_POINTS)
+            reduceScore(SCORE_POINTS);
         }    
 
-        selectedChoice.parentElement.classList.add(classToApply)
+        selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(function() {
-            selectedChoice.parentElement.classList.remove(classToApply)
-            getNewQuestion()
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
 
-        }, 1000)
-    })
-})
+        }, 1000);
+    });
+});
 /// function correction ///
 function incrementScore(num) {
-    score +=num
-    scoreText.innerText = score
+    score +=num;
+    scoreText.innerText = score;
 }
 /// function correction ///
 function reduceScore(num) {
-    reducescore +=num
-    incorrectText.innerText = reducescore
+    reducescore +=num;
+    incorrectText.innerText = reducescore;
 }
 
-startGame()
+startGame();
