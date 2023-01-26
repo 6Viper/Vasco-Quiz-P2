@@ -58,7 +58,7 @@ let questions = [
 const SCORE_POINTS = 1
 const MAX_QUESTIONS = 5
 
-startGame = function() {
+function startGame() {
     questionCounter = 0
     score = 0
     reducescore = 0
@@ -66,7 +66,7 @@ startGame = function() {
     getNewQuestion()
 }
 
-getNewQuestion = function() {
+function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
@@ -80,7 +80,7 @@ getNewQuestion = function() {
     currentQuestion = availableQuestions[questionsIndex]
     question.innerText = currentQuestion.question
 
-    choices.forEach(choice => {
+    choices.forEach(function (choice) {
         const number = choice.dataset['number']
         choice.innerText = currentQuestion['choice' + number]
     })
@@ -90,8 +90,8 @@ getNewQuestion = function() {
     acceptingAnswers = true
 }
 
-choices.forEach(choice => {
-    choice.addEventListener('click', e => {
+choices.forEach(function (choice) {
+    choice.addEventListener('click', function (e) {
         if(!acceptingAnswers) return
 
         acceptingAnswers = false
@@ -116,12 +116,12 @@ choices.forEach(choice => {
     })
 })
 
-incrementScore = num => {
+function incrementScore(num) {
     score +=num
     scoreText.innerText = score
 } 
 
-reduceScore = num => {
+function reduceScore(num) {
     reducescore +=num
     incorrectText.innerText = reducescore
 }
