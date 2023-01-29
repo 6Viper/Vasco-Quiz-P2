@@ -20,7 +20,6 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
 - __The Game Intro__
 
   - Question made to player if ready to start the game leading to options bellow.
-  - Feature to include your name before start of the game. 
   - Start button that will direct player to game page.
 
 ![The Game Intro](assets/images/Indexjs.jpg)
@@ -31,18 +30,19 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
   - A score board simple and friendly displaying player score and in the event get a question wrong a point is given to the other team. 
   - Random question large and visible above choices available.
   - Choices from A to D and upon selection background color will change to green if correct option selected or red if incorrect.
+  - Option to reset game before end page(end result).
 
 ![The Game](assets/images/Gamejs.jpg)
 
 - __The Game Ends__
 
-  - The game ends and Player have the options to go back to main page and enter a new name as well to play again, or to go straight into another game. We also thank player for playing this special game.  
+  - The game ends and Player have the options to go back to main page or to go straight into another game. Custom scoreboard present at all times, we also thank player for playing this special game.
 
 ![End Game](assets/images/Endjs.jpg)
 
 - __Features Left to Implement__
 
-  - I would like to add a ranking feature based on names, so can players get a bit competitive and show more insteresting on team knowledge.
+  - I would like to add a ranking feature based on names, so players can get a bit competitive and share with there friends on social media, increasing website visibility.
   - I would like to add sound to correct questions as similar to scoring a goal.
 
 
@@ -52,13 +52,20 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
 
 - The project is responsive, have a good, simple and clean visual effect and is fully functional with correct results.
 
-- All features within main body have been tested to confirm working properly and texts are clear and readable as well easy to understand.
+- All features within each individual page have been tested to confirm working properly and texts are clear and readable as well easy to understand.
 
 - Correct or incorrect answers will be displayed as well tracking question or score functions.
+
+- Any buttons present are functional, "Play", "Reset", "Play Again" and "Go Home".
 
 ## Issues and Bugs
 
 - Corrections made to game.html and style.css paths.
+- Some texts not in english fixed.
+- Correction of function after JS validator.
+- Scoreboard for end page created.
+- Review CSS for visual improvement and different devices.
+- Review of readme file.
 
 ## Validator Testing 
 
@@ -72,7 +79,7 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
   - Accessibility confirmed by running it through lighthouse in devtools
 
     ![Accessibility](assets/images/lightindex.jpg)
-    
+
     ![Accessibility](assets/images/lightgame.jpg)
 
 ## Unfixed Bugs
@@ -107,17 +114,20 @@ No unfixed bugs
 
 The live link can be found here - https://6viper.github.io/Vasco-Quiz-P2/
 
-## Credits 
+- Details on how to contribute for this project can be found on link bellow, "Forking a project and cloning a fork".
+  - [Github Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo "Link to Github on how to Fork a repo")
 
+## Credits 
 ### Content 
 
 - The text for the Home page was provided by myself and Vasco da Gama facts checked from general websites.
 
 ### Code 
-This has been the most challeging so far, where the developer have used several sites and channels to better understand codes been used and how it properly works. Several learning projects reviewed such as Love-maths, Running project, Readme file ideas from Running project and Vasco Dublin, samples from Coding Club and Survival Guild. Links bellow:
+This has been the most challeging so far, where the developer have used several sites and channels to better understand codes been used and how it properly works. Several learning projects reviewed such as Love-maths, Running project, Readme file ideas from Running project and Vasco Dublin, as informed before, developer has relied heavily on youtubers for this project as have choosen a Quiz much different then simple codes learned on previous lessons and simple "rock paper and scissor game". Developer have not simply copied codes from James Q Quick and instead learned from it's guide, for simples understanding of functions, inputs and get data developer have preffered "Bro Code" as much simpler explanations. Ralph from Six Minutes channel would provide a different approach and contribute as well. Links bellow:
 
 - [Code Institue videos](https://learn.codeinstitute.net/dashboard "Link to Code institute dashboard")
 - [Love Maths](https://github.com/6Viper/love-maths "Link to Love Maths")
+- [James Q Quick](https://www.youtube.com/@JamesQQuick "Link to James Youtube Channel")
 - [W3Schools](https://www.w3schools.com/ "Link to W3Schools page")
 - [Bro Code](https://www.youtube.com/c/BroCodez "Link to Bro Code Youtube Channel")
 - [Six Minutes. Smarter.](https://www.youtube.com/c/RalphPhillips73 "Link to Six Minutes. Smarter. Youtube Channel")  
