@@ -4,7 +4,7 @@ Vasco Da Gama Fan Quiz was made for the Second Project required to complete the 
 
 This Quiz intends to target Vasco da Gama fans from all around the world where fans are able to get their knowlodge and curiosities about the team checked trough a series of Questions. Each correct answer will count a score point for you, and for each incorrect answer a point goes to the Outside Team.
 
-![Vasco Da Gama Fan Quiz Mockup](assets/images/finalmockup.jpg)
+![Vasco Da Gama Fan Quiz Mockup](assets/images/mockupjs.jpg)
 
 ## Features 
 
@@ -23,7 +23,7 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
   - Feature to include your name before start of the game. 
   - Start button that will direct player to game page.
 
-![The Game Intro](assets/images/gameintro.jpg)
+![The Game Intro](assets/images/Indexjs.jpg)
 
 - __The Game__
 
@@ -32,13 +32,13 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
   - Random question large and visible above choices available.
   - Choices from A to D and upon selection background color will change to green if correct option selected or red if incorrect.
 
-![The Game](assets/images/thegame.jpg)
+![The Game](assets/images/Gamejs.jpg)
 
 - __The Game Ends__
 
   - The game ends and Player have the options to go back to main page and enter a new name as well to play again, or to go straight into another game. We also thank player for playing this special game.  
 
-![End Game](assets/images/endgame.jpg)
+![End Game](assets/images/Endjs.jpg)
 
 - __Features Left to Implement__
 
@@ -66,12 +66,14 @@ This Quiz intends to target Vasco da Gama fans from all around the world where f
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
-- Accessibility
-  - Accessibility confirmed by running it through lighthouse in devtools
 - JSHint
   - Test made with Js presented no issues  [(Jigsaw) validator](https://jshint.com/)
+- Accessibility
+  - Accessibility confirmed by running it through lighthouse in devtools
 
-    ![Accessibility](assets/images/lighthouse.jpg)
+    ![Accessibility](assets/images/lightindex.jpg)
+    
+    ![Accessibility](assets/images/lightgame.jpg)
 
 ## Unfixed Bugs
 
