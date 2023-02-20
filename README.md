@@ -2,7 +2,7 @@
 
 Vasco Da Gama Fan Quiz was made for the Second Project required to complete the Diploma in Full Stack Software Development program at The Code Institute and shoes to accomplish with success all requirements as well to provide the developer a great learning experience through out the process. 
 
-This Quiz intends to target Vasco da Gama fans from all around the world where fans are able to get their knowlodge and curiosities about the team checked trough a series of Questions. Each correct answer will count a score point for you, and for each incorrect answer a point goes to the Outside Team.
+This Quiz intends to target Vasco da Gama fans from all around the world where fans are able to get their knowledge and curiosities about the team checked trough a series of Questions. Each correct answer will count a score point for you, and for each incorrect answer a point goes to the Outside Team.
 
 ![Vasco Da Gama Fan Quiz Mockup](assets/images/mockupjs.jpg)
 
